@@ -46,10 +46,11 @@ mv Analog_Bridge.ini.1 Analog_Bridge.ini
 mv dvsm.macro.1 dvsm.macro
 chmod +x dvsm.macro
 cp parrot.sh /opt/MMDVM_Bridge
+cd /tmp
 wget <update> 
+ln -s /usr/local/sbin/DMRIDUpdateBM.sh /etc/cron.daily
 
 
-/usr/local/sbin/update-from-github.sh
 
 
 # Add DVSwitch programs via apt-get install
