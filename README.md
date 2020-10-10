@@ -2,7 +2,9 @@
 
 DVSwitch for raspberry install
 
-The App is based on Stretch OS, you can download from here: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip
+The App is based on Stretch OS and the work of N4IRS, you can download from here: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip
+
+First of all, do a system update / upgrade
 
 After that follow the instructions below, estimated time to create all needed files in a Raspberry PI2 is about 15 min
 
