@@ -41,7 +41,7 @@ wget https://raw.githubusercontent.com/DVSwitch/MMDVM_Bridge/master/dvswitch.sh
 chmod +x dvswitch.sh
 wget https://github.com/DVSwitch/Analog_Bridge/raw/master/Analog_Bridge.ini
 wget https://github.com/DVSwitch/Analog_Bridge/raw/master/dvsm.macro
-cd /opt/Analog_bridge
+cd /opt/Analog_Bridge
 mv Analog_Bridge.ini.1 Analog_Bridge.ini
 mv dvsm.macro.1 dvsm.macro
 chmod +x dvsm.macro
@@ -50,7 +50,6 @@ cd /tmp
 wget https://raw.githubusercontent.com/ct1jib/DVSwitch-builder/main/DMRIDUpdateBM.sh
 cp DMRIDUpdateBM.sh /usr/local/sbin
 ln -s /usr/local/sbin/DMRIDUpdateBM.sh /etc/cron.daily
-
 
 
 
