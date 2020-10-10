@@ -6,7 +6,7 @@ set -o errexit
 
 #################################################
 #                                               #
-#    Build a DVSwitch only on a clean disk      #
+#   Build a DVSwitch DMR Only on a clean disk   #
 #                                               #
 #################################################
 
@@ -47,7 +47,8 @@ mv dvsm.macro.1 dvsm.macro
 chmod +x dvsm.macro
 cp parrot.sh /opt/MMDVM_Bridge
 cd /tmp
-wget <update> 
+wget https://raw.githubusercontent.com/ct1jib/DVSwitch-builder/main/DMRIDUpdateBM.sh
+cp DMRIDUpdateBM.sh /usr/local/sbin
 ln -s /usr/local/sbin/DMRIDUpdateBM.sh /etc/cron.daily
 
 
