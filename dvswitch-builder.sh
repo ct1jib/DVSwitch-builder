@@ -41,7 +41,12 @@ wget https://raw.githubusercontent.com/DVSwitch/MMDVM_Bridge/master/dvswitch.sh
 chmod +x dvswitch.sh
 wget https://github.com/DVSwitch/Analog_Bridge/raw/master/Analog_Bridge.ini
 wget https://github.com/DVSwitch/Analog_Bridge/raw/master/dvsm.macro
+cd /opt/Analog_bridge
+mv Analog_Bridge.ini.1 Analog_Bridge.ini
+mv dvsm.macro.1 dvsm.macro
 chmod +x dvsm.macro
+cp parrot.sh /opt/MMDVM_Bridge
+wget <update> 
 
 
 /usr/local/sbin/update-from-github.sh
