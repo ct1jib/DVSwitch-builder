@@ -2,7 +2,12 @@
 
 DVSwitch for raspberry install
 
-RaspBian Strettch 12 min for aquisition
+The App is based on Stretch OS, you can downlaod from here: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip
+
+After that follow the instructions below, estimated time to create all needed files in a Raspberry PI2 is about 15 min
+
+
+***************************************************
 
 sudo -s
 
