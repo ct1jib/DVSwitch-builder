@@ -38,19 +38,23 @@ apt-get install dvswitch -y
 apt-get install libstdc++-arm-none-eabi-newlib -y
 cd /opt/MMDVM_Bridge
 wget https://raw.githubusercontent.com/DVSwitch/MMDVM_Bridge/master/dvswitch.sh
-chmod +x dvswitch.sh
+chmod +x dvswitch.sh.1
+mv dvswitch.sh.1 dvswitch.sh
 wget -O MMDVM_Bridge https://github.com/DVSwitch/MMDVM_Bridge/raw/master/bin/MMDVM_Bridge.armhf
 cd /opt/Analog_Bridge
-wget -O Analog_Bridge https://github.com/DVSwitch/Analog_Bridge/raw/master/bin/Analog_Bridge.amd64
-chmod +x Analog_Bridge
+wget -O Analog_Bridge https://github.com/DVSwitch/Analog_Bridge/raw/master/bin/Analog_Bridge.armhf
+# chmod +x Analog_Bridge
 wget https://github.com/DVSwitch/Analog_Bridge/raw/master/dvsm.macro
+wget https://github.com/DVSwitch/Analog_Bridge/raw/master/Analog_Bridge.ini
 mv Analog_Bridge.ini.1 Analog_Bridge.ini
 mv dvsm.macro.1 dvsm.macro
 chmod +x dvsm.macro
 cp parrot.sh /opt/MMDVM_Bridge
 cd /tmp
 wget https://raw.githubusercontent.com/ct1jib/DVSwitch-builder/main/DMRIDUpdateBM.sh
+chmod +x DMRIDUpdateBM.sh
 cp DMRIDUpdateBM.sh /usr/local/sbin
+/usr/local/sbin/DMRIDUpdateBM.sh
 ln -s /usr/local/sbin/DMRIDUpdateBM.sh /etc/cron.daily
 
 
