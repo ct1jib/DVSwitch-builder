@@ -26,6 +26,7 @@ apt-get install curl -y
 apt-get install g++ -y
 apt-get install make -y
 apt-get install jq -y
+apt-get install qemu -y
 apt-get install build-essential -y
 apt-get install libwxgtk3.0-dev -y
 apt-get install portaudio19-dev -y
