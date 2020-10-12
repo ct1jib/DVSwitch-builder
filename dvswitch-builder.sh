@@ -33,7 +33,6 @@ apt-get install portaudio19-dev -y
 apt-get install libusb-1.0-0-dev -y
 apt-get install python-serial -y
 apt-get install dvswitch -y
-# apt-get install quantar -y
 
 # For Armbian Need to check this !
 apt-get install libstdc++-arm-none-eabi-newlib -y
@@ -55,7 +54,7 @@ cd /tmp
 wget https://raw.githubusercontent.com/ct1jib/DVSwitch-builder/main/DMRIDUpdateBM.sh
 chmod +x DMRIDUpdateBM.sh
 cp DMRIDUpdateBM.sh /usr/local/sbin
-/usr/local/sbin/DMRIDUpdateBM.sh
+# /usr/local/sbin/DMRIDUpdateBM.sh
 ln -s /usr/local/sbin/DMRIDUpdateBM.sh /etc/cron.daily
 
 
